@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kasper's Shopping Mall</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Kasper's Shopping Mall</h1>
+        <nav class="breadcrumb">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#" id="nav-category-link"></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Shopping List -->
+    <aside class="shopping-list">
+        <a href="#shopping-list-expanded" id="shopping-list-toggle">Shopping List <span id="cart-total-price">$0</span></a>
+        <div id="shopping-list-expanded" class="list-content">
+            <ul id="cart-items"></ul>
+            <button id="checkout-button">Checkout</button>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Category List -->
+        <section class="category-list">
+            <h2>Categories</h2>
+            <ul>
+                <li><a href="index.html?category=products-category1" data-category="products-category1" data-textcategory="Category 1">Category 1</a></li>
+                <li><a href="index.html?category=products-category2" data-category="products-category2" data-textcategory="Category 2">Category 2</a></li>
+                <li><a href="index.html?category=products-category3" data-category="products-category3" data-textcategory="Category 3">Category 3</a></li>
+                <li><a href="index.html?category=products-category4" data-category="products-category4" data-textcategory="Category 4">Category 4</a></li>
+                <li><a href="index.html?category=products-category5" data-category="products-category5" data-textcategory="Category 5">Category 5</a></li>
+            </ul>
+        </section>
+
+        <!-- Product List -->
+        <section class="product-list">
+            <div class="product" data-category="products-category1">
+                <a href="product1.html?category=products-category1&product=Product 1" data-product="Product 1">
+                    <img src="images/product1.jpg" alt="Product 1" class="product-thumbnail">
+                    <h3>Product 1</h3>
+                </a>
+                <p class="price">$1.0</p>
+                <button class="add-to-cart" data-product="Product 1" data-price="1.0">Add to Cart</button>
+            </div>
+            <div class="product" data-category="products-category2">
+                <a href="product2.html" data-product="Product 2">
+                    <img src="images/product2.jpg" alt="Product 2" class="product-thumbnail">
+                    <h3>Product 2</h3>
+                </a>
+                <p class="price">$2.0</p>
+                <button class="add-to-cart" data-product="Product 2" data-price="2.0">Add to Cart</button>
+            </div>
+            <!-- Add more products as needed -->
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Kasper's Shopping Mall. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

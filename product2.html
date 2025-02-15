@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kasper's Shopping Mall - Product 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Kasper's Shopping Mall</h1>
+        <nav class="breadcrumb">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html?category=products-category2" id="nav-category-link">Category 2</a></li>
+                <li><a href="#" id="nav-product">Product 2</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Shopping List -->
+    <aside class="shopping-list">
+        <a href="#shopping-list-expanded" id="shopping-list-toggle">Shopping List <span id="cart-total-price">$0</span></a>
+        <div id="shopping-list-expanded" class="list-content">
+            <ul id="cart-items"></ul>
+            <button id="checkout-button">Checkout</button>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="product-detailed-info">
+            <h1>Product 2</h1>
+            <div class="product-image">
+                <img src="images/product2.jpg" alt="Product 2 Image">
+            </div>
+            <p class="price">$2.00</p>
+            <p class="product-description">
+                This is the detailed information for Product 2. This can contain the description, specifications, features, etc. of the product.
+                For example, it has a unique design that can attract users' attention;
+                Adopting high-quality materials to ensure the durability of the product;
+                Various functions to meet the needs of different users.
+            </p>
+            <button class="add-to-cart" data-product="Product 2" data-price="2.00">Add to Cart</button>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Kasper's Shopping Mall. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
