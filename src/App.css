@@ -1,0 +1,265 @@
+/* 全局样式 */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* 头部样式 */
+.header {
+  background-color: #007dc6;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+  font-size: 28px;
+  margin: 0;
+}
+
+/* 导航栏样式 */
+.nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav ul li {
+  margin: 0 10px;
+}
+
+.nav ul li button {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 18px; /* 增大导航栏字体 */
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.nav ul li button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* 购物车图标样式 */
+.shopping-cart-icon {
+  position: relative;
+  cursor: pointer;
+  font-size: 18px; /* 增大购物车图标及总价字体 */
+}
+
+/* 购物车下拉列表样式 */
+.shopping-list-dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 15px;
+  width: auto;
+  min-width: 300px;
+  z-index: 1;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.shopping-list-dropdown h2 {
+  color: black; /* 将展开后的 "Shopping List" 调整成黑色 */
+}
+
+.shopping-list-dropdown ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.shopping-list-dropdown li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+}
+
+.shopping-list-dropdown img {
+  margin-right: 15px;
+}
+
+.product-info {
+  display: flex;
+  flex-direction: column;
+  margin-right: 15px;
+  flex-grow: 1;
+  color: black;
+  font-size: 14px;
+}
+
+.product-info span {
+  margin-bottom: 3px;
+}
+
+.shopping-list-dropdown input {
+  width: 50px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.shopping-list-dropdown p {
+  margin-top: 15px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.shopping-list-dropdown button {
+  background-color: #007dc6;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.shopping-list-dropdown button:hover {
+  background-color: #005d92;
+}
+
+/* 面包屑导航样式 */
+.breadcrumb {
+  padding: 15px;
+  background-color: #f0f0f0;
+  border-bottom: 1px solid #ccc;
+  font-size: 16px; /* 增大面包屑导航栏字体 */
+}
+
+.breadcrumb button {
+  background: none;
+  border: none;
+  color: #007dc6;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/* 主要内容区域样式 */
+.main-content {
+  padding: 30px;
+}
+
+/* 产品列表样式 */
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.product-item {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  width: 220px;
+  margin: 15px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.product-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-thumbnail {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.product-item h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.product-item p {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.product-item button {
+  background-color: #007dc6;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.product-item button:hover {
+  background-color: #005d92;
+}
+
+/* 产品详情页样式 */
+.product-detail {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.product-detail-left {
+  margin-right: 30px;
+}
+
+.product-detail-right {
+  text-align: left;
+  max-width: 400px;
+}
+
+.product-detail-right h2 {
+  font-size: 26px;
+  margin-bottom: 15px;
+}
+
+.product-description {
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.product-price {
+  font-size: 18px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.product-detail-right button {
+  background-color: #007dc6;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.product-detail-right button:hover {
+  background-color: #005d92;
+}
+
+/* 页脚样式 */
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 30px;
+}
